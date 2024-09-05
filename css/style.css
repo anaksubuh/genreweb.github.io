@@ -919,12 +919,9 @@ nav {
     background-image: none;
     border: none;
     border-radius: none;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    z-index: 1050; /* Pastikan menu berada di atas logo */
 }
+
 .navbar-small .navbar-toggle {
     position: relative;
     float: right;
@@ -950,17 +947,12 @@ nav {
 }
 /*Navbar Collapse Menu*/
 .navbar-collapse {
-	padding-right: 0px;
-	padding-left: 0px;
-	color: #3a3a3a;
+    right: 10px;
+    color: #3a3a3a;
+    border-radius: 10px;
+    z-index: 1050; /* Pastikan ini lebih tinggi dari elemen lain */
+    position: absolute; /* Sesuaikan jika perlu */
 }
-.navbar-default .navbar-nav>li>a:focus {
-    color: #f5f5f5;
-}
-.navbar-small .navbar-nav>li>a:focus {
-    color: #1c1c1c;
-}
-
 
 
 /*Navbar Collapse*/  
@@ -1087,7 +1079,9 @@ nav {
 }
 .navbar-default .navbar-brand .logo-small {
 	position:absolute;
-    width: 100px;
+    top: 1px;
+    left: 1px;
+    width: 50px;
     margin-top: 11px;
     opacity: 0;
     -webkit-transition: all 0.4s ease;
@@ -1100,14 +1094,15 @@ nav {
     margin-top: 35px;
 }
 .navbar-alt .navbar-brand .logo-small {
-    margin-top: 35px;
+    top: 1px;
+    left: 1px;
 }
 /* End Logo Big White */
 /* Logo Small Black */
 .navbar-small .navbar-brand .logo-big {
     position:absolute;
     opacity: 0;
-    width: 55px;
+    width: 50px;
     margin-top: 3px;  
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
@@ -1117,8 +1112,10 @@ nav {
 }
 .navbar-small .navbar-brand .logo-small {
     position:absolute;
+    top: 1px;
+    left: 1px;
     opacity: 1;
-    width: 55px;
+    width: 50px;
     margin-top: 3px; 
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
