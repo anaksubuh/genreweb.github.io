@@ -1,0 +1,52 @@
+/* ===================================================================================
+
+Theme Name: Multisite Genre Jawa Tengah
+Theme URI: http://genrejateng.or.id/
+Author: Arep
+Author URI: https://instagram.com/rep.son
+Description: Made with love by Arep.
+Version: 1.0.0
+Template: solvior
+License: GNU General Public License version 3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+
+We encourage you to create Child theme for any modifications you will want to do.
+
+Why use Child theme?
+
+Because of future updates we may provide for this theme that will overwrite your
+modifications and all your custom work.
+
+If you are not familiar with Child Themes, you can read about it here:
+http://codex.wordpress.org/Child_Themes
+http://wp.tutsplus.com/tutorials/theme-development/child-themes-basics-and-creating-child-themes-in-wordpress/
+
+====================================================================================== */
+
+.brand-logo {
+  text-align: center !important;
+}
+
+.brand-logo img {
+  display: inline-block !important;
+  max-width: 65% !important;
+}
+
+.brand-slider-2 .brand-logo img {
+    filter: none !important;
+}
+
+.service-style-2 .service-icon {
+    font-size: 25px !important;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+    .service-style-2 .service-icon {
+        font-size: 22px !important;
+    }
+}
+
+.tj-header-area.header-2.header-absolute .header-wrapper {
+    border-radius: 100px !important;
+}
